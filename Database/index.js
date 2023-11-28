@@ -1,15 +1,37 @@
-import courses from "./courses.json";
-import modules from './modules.json'
-import assignments from './assignments.json'
-import users from "./users.json"
-import grades from "./grades.json"
-import enrollments from "./enrollments.json"
+// import courses from "./courses.json";
+// import modules from './modules.json'
+// import assignments from './assignments.json'
+// import users from "./users.json"
+// import grades from "./grades.json"
+// import enrollments from "./enrollments.json"
 
+// export default {
+//   courses,
+//   modules,
+//   assignments,
+//   users,
+//   grades,
+//   enrollments
+// };
+import { readFile } from 'fs/promises';
+ 
+async function loadJSON(filename) {
+  const content = await readFile(filename, 'utf8');
+  return JSON.parse(content);
+}
+ 
+const courses = await loadJSON(new URL('./courses.json', import.meta.url));
+const modules = await loadJSON(new URL('./modules.json', import.meta.url));
+const assignments = await loadJSON(new URL('./assignments.json', import.meta.url));
+const users = await loadJSON(new URL('./users.json', import.meta.url));
+const grades = await loadJSON(new URL('./grades.json', import.meta.url));
+const enrollments = await loadJSON(new URL('./enrollments.json', import.meta.url));
+ 
 export default {
-  courses,
+  courses, 
   modules,
   assignments,
   users,
-  grades,
-  enrollments
+  enrollments,
+  grades
 };
