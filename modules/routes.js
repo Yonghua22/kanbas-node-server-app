@@ -1,5 +1,5 @@
 import db from "../Database/index.js";
-function ModuleRoutes(app) {
+function moduleroutes(app) {
     app.get("/api/courses/:cid/modules", (req, res) => {
         const { cid } = req.params;
         const modules = db.modules
@@ -38,4 +38,4 @@ function ModuleRoutes(app) {
 
 
 }
-export default ModuleRoutes;
+export default moduleroutes;
