@@ -1,37 +1,56 @@
 [
     {
+      "objId": 1,
+      "_id": "CS5010",
+      "name": "CS5010 Programming Design Paradigm",
+      "number": "202410_2",
+      "term": "Fall 2022 Semester",
+      "startDate": "2023-01-10",
+      "endDate": "2023-05-15"
+    },
+    {
+      "objId": 2,
+      "_id": "CS5610",
+      "name": "CS5610 Web Development",
+      "number": "1150_202410_2",
+      "term": "Fall 2023 Semester",
+      "startDate": "2023-01-10",
+      "endDate": "2023-05-15"
+    },
+    {
+      "objId": 3,
       "_id": "RS101",
-      "name": "Web Developement",
-      "number": "CS5600",
+      "name": "Machine Learning",
+      "number": "RS4550",
+      "term": "Fall 2023 Semester",
       "startDate": "2023-01-10",
       "endDate": "2023-05-15"
     },
     {
+      "objId": 4,
       "_id": "RS102",
-      "name": "Java",
+      "name": "IDMP",
       "number": "RS4560",
+      "term": "Spring 2023 Semester",
       "startDate": "2023-01-10",
       "endDate": "2023-05-15"
     },
     {
+      "objId": 5,
       "_id": "RS103",
-      "name": "System Design",
+      "name": "Algorithms",
       "number": "RS4570",
+      "term": "Spting 2023 Semester",
       "startDate": "2023-01-10",
       "endDate": "2023-05-15"
     },
     {
-      "_id": "RS104",
-      "name": "C++",
-      "number": "RS4570",
-      "startDate": "2023-01-10",
-      "endDate": "2023-05-15"
-    },
-    {
-      "_id": "RS105",
-      "name": "SQL",
-      "number": "RS4570",
-      "startDate": "2023-01-10",
-      "endDate": "2023-05-15"
+      "objId": 6,
+      "endDate": "2023-12-15",
+      "name": "DBMS",
+      "number": "12345",
+      "startDate": "2023-09-10",
+      "term": "Fall 2022 Semester",
+      "_id": "RS104"
     }
   ]
