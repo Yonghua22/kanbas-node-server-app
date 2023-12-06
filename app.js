@@ -24,10 +24,22 @@ app.use(cors({
         }
     }
 }));
-
-app.use(express.json());
+const sessionOptions = {
+    secret: "any string",
+    resave: false,
+    saveUninitialized: false,
+};
+if (process.env.NODE_ENV !== "development") {
+    sessionOptions.proxy = true;
+    sessionOptions.cookie = {
+      sameSite: "none",
+      secure: true,
+    };
+}
+app.use(express.json(sessionOptions));
 CourseRoutes(app);
 ModuleRoutes(app);
+app.use(express.json());
 // AssignmentRoutes(app);
 Lab5(app);
 Hello(app);
